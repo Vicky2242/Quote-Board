@@ -105,7 +105,7 @@ app.delete("/api/quotes/:id", async(req,res) => {
 mongoose.connect(process.env.MONGO_URI)
  .then(() => console.log("MongoDB Connected successfully!"))
  .catch((err) => {
-    console.err(`MongoDB connection error : ${err.message}`);
+    console.error(`MongoDB connection error : ${err.message}`);
     process.exit(1);
  });
 
